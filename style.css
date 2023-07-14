@@ -56,6 +56,19 @@ article figure img {
   height: 100%;
 }
 
+.rotate {
+  animation: rotate 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes rotate {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 article section {
   display: flex;
   flex-direction: column;
