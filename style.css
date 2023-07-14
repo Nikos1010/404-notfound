@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  font-family: "Space Mono";
+  --Gray1: #333333;
+  --Gray2: #4f4f4f;
+  --footer-text: #bdbdbd;
+}
+
+html {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 2px 24px 0px hsla(0, 0%, 0%, 0.1);
+  min-height: 100%;
+  height: auto;
+}
+
+body {
+  min-height: 100vh;
+  padding: 1.5rem 4.8125rem 2.5rem 4.8125rem;
+  margin: 0;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+header p {
+  color: var(--Gray1);
+  font-size: 1.5rem;
+  font-family: Inconsolata;
+  font-weight: 700;
+  letter-spacing: 1.92px;
+  text-transform: uppercase;
+}
+
+article {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.75rem 0;
+}
+
+article figure {
+  width: 100%;
+  max-height: 28rem;
+  max-width: 33.7015rem;
+  min-width: 17.8125rem;
+  margin: 0;
+}
+
+article figure img {
+  width: 100%;
+  height: 100%;
+}
+
+article section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+h2,
+p {
+  margin: 0;
+}
+
+article section h2 {
+  max-width: 36.625rem;
+  color: var(--Gray1);
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.2025rem;
+}
+
+article section p {
+  max-width: 23.8125rem;
+  color: var(--Gray2);
+  font-size: 1.5rem;
+  letter-spacing: 0.0525rem;
+}
+
+article section button {
+  width: 13.5rem;
+  height: 4.25rem;
+  background: var(--Gray1);
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.0306rem;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  color: var(--footer-text);
+  font-size: 0.875rem;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+@media (max-width: 1300px) {
+  body {
+    padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+  }
+
+  article {
+    justify-content: center;
+  }
+}
+
+@media (width <= 600px) {
+  header p {
+    font-size: 1.5rem;
+    letter-spacing: -0.12rem;
+  }
+
+  article section h2 {
+    font-size: 3rem;
+  }
+
+  article section p {
+    font-size: 1.125rem;
+  }
+}
